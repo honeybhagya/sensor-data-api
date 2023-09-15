@@ -56,7 +56,7 @@ Here's an sample JSON:
 
 output: "Weather data created successfully"
 
- -Negative scenario:
+ - Negative scenario:
 {
   "sensorNumber": 1,
   "metricName": "",
