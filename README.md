@@ -45,7 +45,7 @@ http://localhost:8080/api/sensors/add
 
 Here's an sample JSON:
 
--Positive Scenario:
+- Positive Scenario:
 
 {
   "sensorNumber": 1,
@@ -72,14 +72,14 @@ To query weather data, make an HTTP GET request to the /api/sensors/query endpoi
 
 Below is the sample query
 
- -Positive scenario: 
+ - Positive scenario: 
  Query average temperature for sensor 1 between 2023-09-01 and 2023-09-30
 
 "http://localhost:8080/api/sensors/query?sensorNumber=1&metricName=temperature&statistic=average&startDate=2023-09-01&endDate=2023-09-30"
 
 output : 25
 
- -Negative scenario:
+ - Negative scenario:
 Query with missing parameters 
 
 "http://localhost:8080/api/sensors/query?sensorNumber=&metricName=temperature&statistic=average&startDate=2023-09-01&endDate=2023-09-30"
