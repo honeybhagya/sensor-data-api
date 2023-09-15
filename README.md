@@ -83,4 +83,24 @@ Query with missing parameters
 
 output: 404 Not Found
 
+##Features Missing
 
+Updating Weather Data (PUT Request):
+
+Create a method to handle PUT requests for updating weather data. This method should take the unique identifier of the data to be updated (id) as a path variable and the updated data in the request body.
+Validate the input data to ensure it is complete and valid.
+Use the id to look up the existing weather data in the database.
+If the data with the specified id exists, update it with the new data. If it doesn't exist, return a 404 Not Found response.
+Return a success message and an appropriate HTTP status code (e.g., 200 OK) if the update is successful.
+
+Deleting Weather Data (DELETE Request):
+
+Create a method to handle DELETE requests for deleting weather data. This method should take the unique identifier of the data to be deleted (id) as a path variable.
+Use the id to check the existing weather data in your database.
+
+If the data with the specified id exists, delete it. If it doesn't exist, return a 404 Not Found response.
+Return a success message and an appropriate HTTP status code (e.g., 204 No Content) if the deletion is successful.
+
+Pagination:
+
+The controller currently lacks pagination and sorting capabilities. As the volume of data grows, pagination becomes crucial for efficiently retrieving data in manageable chunks. 
