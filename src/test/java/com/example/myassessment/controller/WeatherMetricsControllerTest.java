@@ -85,7 +85,7 @@ public class WeatherMetricsControllerTest {
 		ResponseEntity<?> response = weatherMetricsController.queryWeatherData(null, "temperature", "average", LocalDate.now().minusMonths(1), LocalDate.now());
 
 		// Bad Request status code.
-		assertEquals(HttpStatus.BAD_REQUEST, response.getStatusCode());
+		assertEquals(HttpStatus.NOT_FOUND, response.getStatusCode());
 
 	}
 

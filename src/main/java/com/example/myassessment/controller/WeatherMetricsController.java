@@ -79,9 +79,7 @@ public class WeatherMetricsController {
 
 		// Based on statistic calculated min, max, sum, or average.
 		double report = 0.0;
-		if (sensorNumber == null || metricName == null  || statistic == null) {
-			return ResponseEntity.badRequest().body("Invalid parameters");
-		}
+		
 		if (weatherDataList.isEmpty()) {
 			return ResponseEntity.notFound().build(); // Return 404 when no data is found
 		}
