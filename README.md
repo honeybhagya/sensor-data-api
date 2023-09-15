@@ -58,7 +58,6 @@ output: "Weather data created successfully"
  -Negative scenario:
 {
   "sensorNumber": 1,
-  "metricName": "",
   "date": "2023-09-13",
   "value": 25.5
 }
