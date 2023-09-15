@@ -42,7 +42,7 @@ To create a new weather data record, we have to make an HTTP POST request to the
 
 http://localhost:8080/api/sensors/add
 
-Here's an sample JSON:
+Here's a sample JSON:
 
 -Positive Scenario:
 
@@ -80,8 +80,8 @@ output : 25
  -Negative scenario:
 Query with missing parameters 
 
-"http://localhost:8080/api/sensors/query?sensorNumber=&metricName=temperature&statistic=average&startDate=2023-09-01&endDate=2023-09-30"
+"http://localhost:8080/api/sensors/query?sensorNumber=1&metricName=test&statistic=average&startDate=2023-09-01&endDate=2023-09-30"
 
-output: "Invalid parameters" 
+output: 404 Not Found
 
 
