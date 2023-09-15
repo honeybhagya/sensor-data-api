@@ -23,8 +23,7 @@ Follow these instructions to set up and run the Weather data Report Metrics Proj
 1. Clone this repository to your local machine:
 
    ```shell
-   git clone https://github.com/your-/weather-report-metrics.git
-
+   https://github.com/honeybhagya/weather-data-report-api.git
 Navigate to the project directory:
   - cd weather-report-metrics
   Build the project using Maven:
