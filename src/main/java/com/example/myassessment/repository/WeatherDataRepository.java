@@ -11,6 +11,6 @@ import com.example.myassessment.entity.WeatherData;
 
 @Repository
 public interface WeatherDataRepository extends JpaRepository <WeatherData, Long> {
-	    List<WeatherData> findBySensorNumberAndMetricNameAndDateBetween(
-	    		Long sensorNumber, String metricName, LocalDate startDate, LocalDate endDate);
+	List<WeatherData> findBySensorNumberAndMetricNameAndDateBetween(
+			Long sensorNumber, String metricName, LocalDate startDate, LocalDate endDate);
 }
