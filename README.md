@@ -103,4 +103,4 @@ Return a success message and an appropriate HTTP status code (e.g., 204 No Conte
 
 Pagination:
 
-The controller currently lacks pagination and sorting capabilities. As the volume of data grows, pagination becomes crucial for efficiently retrieving data in manageable chunks. 
+The controller currently lacks pagination. As the volume of data grows, pagination becomes crucial for efficiently retrieving data in manageable chunks. 
